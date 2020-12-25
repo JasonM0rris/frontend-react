@@ -3,6 +3,7 @@ import { Link } from "gatsby"
 import styled from "styled-components"
 import { H1, MediumText } from "../styles/TextStyles"
 import { themes } from "../styles/ColorStyles"
+import SecondaryButton from "../buttons/secondarybutton"
 
 function HeroSection() {
   return (
@@ -17,7 +18,7 @@ function HeroSection() {
             For people who want to drive change and make a difference with
             helping save the environment.
           </Description>
-          <Link to="/page-2/">Go to page 2</Link> <br />
+          <SecondaryButton title="Sign In" />
         </TextWrapper>
       </ContentWrapper>
     </Wrapper>
