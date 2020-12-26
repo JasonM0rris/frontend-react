@@ -3,7 +3,8 @@ import { Link } from "gatsby"
 import styled from "styled-components"
 import { H1, MediumText } from "../styles/TextStyles"
 import { themes } from "../styles/ColorStyles"
-import SecondaryButton from "../buttons/secondarybutton"
+import SecondaryButton from "../buttons/secondary-button"
+import PrimaryButton from "../buttons/primary-button"
 
 function HeroSection() {
   return (
@@ -18,7 +19,7 @@ function HeroSection() {
             For people who want to drive change and make a difference with
             helping save the environment.
           </Description>
-          <SecondaryButton title="Sign In" />
+          <PrimaryButton title="Sign Up" />
         </TextWrapper>
       </ContentWrapper>
     </Wrapper>
