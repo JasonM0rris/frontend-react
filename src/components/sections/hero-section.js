@@ -33,8 +33,16 @@ const Wrapper = styled.div`
 `
 const ContentWrapper = styled.div`
   max-width: 1234px;
-  padding: 200px 30px;
   margin: 0 auto;
+  padding: 200px 30px;
+  display: grid;
+  grid-template-columns: 360px auto;
+
+  @media (max-width: 450px) {
+    grid-template-columns: auto;
+    gap: 60px;
+    padding: 150px 20px 250px;
+  }
 `
 const TextWrapper = styled.div`
   max-width: 360px;
@@ -43,6 +51,10 @@ const TextWrapper = styled.div`
 `
 const Title = styled(H1)`
   color: ${themes.dark.text1};
+
+  @media (max-width: 450px) {
+    font-size: 40px;
+  }
 `
 
 const Description = styled(MediumText)``

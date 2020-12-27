@@ -15,9 +15,9 @@ export default function PrimaryButton(props) {
 
 const Wrapper = styled.div`
   height: 48px;
-  padding: 10px 20px;
+  vertical-align: middle;
+  padding: 15px 20px;
   text-align: center;
-  vertical-align: center;
   min-width: 80px;
   max-width: 180px;
   font-size: 18px;
