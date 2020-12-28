@@ -1,5 +1,4 @@
 import React from "react"
-import { Link } from "gatsby"
 import styled from "styled-components"
 import { H1, MediumText } from "../styles/TextStyles"
 import { themes } from "../styles/ColorStyles"
@@ -19,7 +18,10 @@ function HeroSection() {
             For people who want to drive change and make a difference with
             helping save the environment.
           </Description>
-          <PrimaryButton title="Sign Up" />
+          <ButtonSection>
+            <PrimaryButton title="Join Us" />
+            <SecondaryButton title="Sign In" />
+          </ButtonSection>
         </TextWrapper>
       </ContentWrapper>
     </Wrapper>
@@ -29,7 +31,7 @@ function HeroSection() {
 export default HeroSection
 
 const Wrapper = styled.div`
-  background: linear-gradient(180deg, #4316db 0%, #9076e7 100%);
+  /*background: linear-gradient(180deg, #4316db 0%, #9076e7 100%);*/
 `
 const ContentWrapper = styled.div`
   max-width: 1234px;
@@ -50,11 +52,22 @@ const TextWrapper = styled.div`
   gap: 30px;
 `
 const Title = styled(H1)`
-  color: ${themes.dark.text1};
+  color: ${themes.light.text1};
 
   @media (max-width: 450px) {
     font-size: 40px;
   }
 `
+const ButtonSection = styled.div`
+  max-width: 360px;
+  display: grid;
+  grid-template-columns: 180px auto;
 
-const Description = styled(MediumText)``
+  @media (max-width: 450px) {
+    grid-template-columns: 180px auto;
+  }
+`
+
+const Description = styled(MediumText)`
+  color: ${themes.light.text1};
+`

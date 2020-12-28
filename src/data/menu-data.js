@@ -14,23 +14,23 @@ export const menuData = [
     icon: "/images/icons/courses.svg",
     link: "/redeem",
   },
-  { title: "", icon: "/images/icons/account.svg", link: "/account" },
+  { title: "Account", icon: "/images/icons/profile_02.svg", link: "/account" },
 ]
 
 export const tooltipData = [
   {
     title: "Profile",
     icon: "/images/icons/profile.svg",
-    link: "/redeem",
+    link: "/profile",
   },
   {
     title: "Settings",
     icon: "/images/icons/settings.svg",
-    link: "/redeem",
+    link: "/settings",
   },
   {
     title: "Sign out",
     icon: "/images/icons/signout.svg",
-    link: "/redeem",
+    link: "/sign-out",
   },
 ]

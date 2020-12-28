@@ -3,7 +3,7 @@ import React, { useState } from "react"
 import styled from "styled-components"
 import { menuData } from "../../data/menu-data"
 import MenuButton from "../buttons/menu-button"
-import MenuTooltip from "../tooltips/menu-tooltip"
+import MenuExpand from "../tooltips/menu-expand"
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false)
@@ -20,24 +20,21 @@ export default function Header() {
         <img src="/images/logos/logo.svg" alt="logo" />
       </Link>
       <MenuWrapper count={menuData.length}>
-        {menuData.map((item, index) =>
-          item.link === "/account" ? (
-            <MenuButton
-              key={index}
-              item={item}
-              onClick={event => handleClick(event)}
-            />
-          ) : (
-            <MenuButton item={item} key={index} />
-          )
-        )}
+        {menuData.map((item, index) => (
+          <MenuButton item={item} key={index} />
+        ))}
         <HamburgerWrapper>
           <MenuButton
-            item={{ title: "", icon: "/images/icons/hamburger.svg", link: "" }}
+            item={{
+              title: "",
+              icon: "/images/icons/hamburger.svg",
+              link: "/",
+            }}
+            onClick={() => setIsOpen(!isOpen)}
           />
         </HamburgerWrapper>
       </MenuWrapper>
-      <MenuTooltip isOpen={isOpen} />
+      <MenuExpand isOpen={isOpen} />
     </Wrapper>
   )
 }

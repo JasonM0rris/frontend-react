@@ -15,17 +15,17 @@ export default function SecondaryButton(props) {
 
 const Wrapper = styled.div`
   height: 48px;
-  padding: 10px 20px;
+  vertical-align: middle;
+  padding: 15px 20px;
   text-align: center;
   min-width: 80px;
-  max-width: 180px;
+  max-width: 140px;
   font-size: 18px;
-  color: #000;
   font-weight: 500;
   border-radius: 24px;
-  border: 2px solid #fff;
+  border: 2px solid #000;
 `
 
 const Title = styled(Caption2)`
-  color: white;
+  color: black;
 `

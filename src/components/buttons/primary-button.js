@@ -19,7 +19,7 @@ const Wrapper = styled.div`
   padding: 15px 20px;
   text-align: center;
   min-width: 80px;
-  max-width: 180px;
+  max-width: 140px;
   font-size: 18px;
   color: #000;
   font-weight: 500;
