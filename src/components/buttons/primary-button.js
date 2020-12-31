@@ -5,7 +5,7 @@ import { Caption, Caption2 } from "../styles/TextStyles"
 
 export default function PrimaryButton(props) {
   return (
-    <Link to="/page-2">
+    <Link to="/dashboard">
       <Wrapper>
         <Title>{props.title || "Primary Btn"}</Title>
       </Wrapper>

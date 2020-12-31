@@ -5,7 +5,7 @@ import { Caption, Caption2 } from "../styles/TextStyles"
 
 export default function SecondaryButton(props) {
   return (
-    <Link to="/page-2">
+    <Link to="/dashboard">
       <Wrapper>
         <Title>{props.title || "Secondary Btn"}</Title>
       </Wrapper>
