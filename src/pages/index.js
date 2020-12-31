@@ -1,20 +1,18 @@
 import React from "react"
-import { BrowserRouter, Route } from "react-router-dom"
-import Login from "../components/layout/form"
-import Header from "../components/layout/header"
 import Layout from "../components/layout/layout"
 import SEO from "../components/layout/seo"
 import HeroSection from "../components/sections/hero-section"
-import NotFoundPage from "./404"
+import staticdata from "../../staticdata.json"
+import PageSection from "../components/sections/section"
+import Footer from "../components/layout/footer"
 
 function IndexPage() {
   return (
-    <BrowserRouter>
-      <Route exact path="/" component={Header} />
-      <Route path="/404" component={NotFoundPage} />
+    <Layout>
       <SEO title="Home" />
       <HeroSection />
-    </BrowserRouter>
+      <PageSection title="How it works" text="Step1, Step2, Step3" />
+    </Layout>
   )
 }
 

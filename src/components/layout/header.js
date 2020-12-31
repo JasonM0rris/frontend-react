@@ -28,7 +28,7 @@ export default function Header() {
             item={{
               title: "",
               icon: "/images/icons/hamburger.svg",
-              link: "/",
+              link: "#",
             }}
             onClick={() => setIsOpen(!isOpen)}
           />
