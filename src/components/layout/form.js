@@ -1,11 +1,11 @@
 import React from "react"
 import styled from "styled-components"
-
+import { H3, MediumText, BodyIntro } from "../styles/TextStyles"
+import { themes } from "../styles/ColorStyles"
 export default function Login(props) {
   return (
     <Wrapper>
-      <Title>Form</Title>
-      <hr />
+      <Title>Sign in</Title>
       <FormWrapper>
         <form>
           Username: <br />
@@ -24,10 +24,10 @@ export default function Login(props) {
 }
 const Wrapper = styled.div`
   position: relative;
+  margin-top: 240px;
   display: grid;
-  grid-template-columns: auto;
+  grid-template-rows: auto;
   width: 100%;
-  height: 80px;
   justify-content: center;
   align-items: center;
 
@@ -36,7 +36,10 @@ const Wrapper = styled.div`
   }
   @media (max-width: 450px) {
     position: relative;
+    margin-top: 120px;
   }
 `
-const Title = styled.div``
+const Title = styled(BodyIntro)`
+  color: ${themes.light.text1};
+`
 const FormWrapper = styled.div``

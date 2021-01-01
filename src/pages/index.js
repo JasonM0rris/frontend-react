@@ -10,7 +10,16 @@ function IndexPage() {
     <Layout>
       <SEO title="Home" />
       <HeroSection />
-      <PageSection title="How it works" text="Step1, Step2, Step3" />
+
+      <PageSection
+        title="How it works"
+        subtitle1="Step1"
+        subcontent1="some dummy text here"
+        subtitle2="Step2"
+        subcontent2="some dummy text here"
+        subtitle3="Step3"
+        subcontent3="some dummy text here"
+      />
     </Layout>
   )
 }

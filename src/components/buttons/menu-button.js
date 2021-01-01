@@ -18,7 +18,7 @@ const MenuItem = styled.div`
   color: #444;
   display: grid;
   grid-template-columns: 24px auto;
-  gap: ${props => (props.title ? "4px" : "0px")};
+  gap: ${props => (props.title ? "12px" : "0px")};
   align-items: center;
   padding: 10px;
   border-radius: 10px;

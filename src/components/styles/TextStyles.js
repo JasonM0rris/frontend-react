@@ -38,7 +38,7 @@ export const BodyMain = styled.p`
 
 export const MediumText = styled.p`
   font-weight: normal;
-  font-size: 17px;
+  font-size: 16px;
   line-height: 130%;
 `
 

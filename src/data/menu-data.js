@@ -1,20 +1,20 @@
 export const menuData = [
   {
     title: "How it works",
-    icon: "/images/icons/courses.svg",
+    icon: "/images/icons/how.svg",
     link: "/howitworks",
   },
   {
     title: "Add points",
-    icon: "/images/icons/courses.svg",
+    icon: "/images/icons/add.svg",
     link: "/add-points",
   },
   {
     title: "Redeem points",
-    icon: "/images/icons/courses.svg",
+    icon: "/images/icons/redeem.svg",
     link: "/redeem",
   },
-  { title: "Account", icon: "/images/icons/profile_02.svg", link: "/account" },
+  { title: "Account", icon: "/images/icons/account.svg", link: "/account" },
 ]
 
 export const tooltipData = [

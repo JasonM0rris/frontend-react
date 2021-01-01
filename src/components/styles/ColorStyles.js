@@ -4,7 +4,8 @@ export const themes = {
     text2: `rgba(0,0,0,0.7)`,
     primary: `#3913B8`,
     secondary: "#2FB5FC",
-    backgroundColor: `#22f6f6`,
+    backgroundColor: `#fff`,
+    /*backgroundColor: `#22f6f6`,*/
     card: {
       backgroundColor: `rgba(255, 255, 255, 0.6)`,
       boxShadow: `0px 50px 100px rgba(34, 79, 169, 0.3),

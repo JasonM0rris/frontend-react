@@ -1,5 +1,7 @@
 import React from "react"
 import styled from "styled-components"
+import { H1, SmallText } from "../styles/TextStyles"
+import { themes } from "../styles/ColorStyles"
 
 export default function ProfileSection(props) {
   return (
@@ -80,16 +82,12 @@ const Greenli = styled.div`
   justify-self: center;
 `
 
-const Descgreen = styled.p`
-  font-size: 13px;
-  font-weight: normal;
-  color: #555;
+const Descgreen = styled(SmallText)`
+  color: ${themes.light.text2};
 `
 
-const Descarb = styled.p`
-  font-size: 13px;
-  font-weight: normal;
-  color: #555;
+const Descarb = styled(SmallText)`
+  color: ${themes.light.text2};
 `
 
 const Carbonli = styled.div`
@@ -131,7 +129,8 @@ const CarbonWeekPoints = styled.h3`
   font-weight: 800;
 `
 
-const SectionText = styled.h1`
+const SectionText = styled(H1)`
+  color: ${themes.light.text1};
   font-size: 40px;
   font-weight: bold;
   justify-self: center;
